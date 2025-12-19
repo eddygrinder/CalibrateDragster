@@ -5,27 +5,31 @@
 #include "driver/gpio.h"
 #include "driver/ledc.h"
 #include "esp_rom_gpio.h"
+#include "blinkt.h"
 
 adc_oneshot_unit_handle_t adc1_handle;
 
 // Canal ADC dos sensores
 #define S1_CHANNEL ADC_CHANNEL_6
 #define S2_CHANNEL ADC_CHANNEL_7
-#define S3_CHANNEL ADC_CHANNEL_4
+#define S3_CHANNEL ADC_CHANNEL_3
 #define S4_CHANNEL ADC_CHANNEL_5
 
 void app_main(void)
 {
+
+     // Inicializa Blinkt!
+    blinkt_init();      // Inicializa os pinos
+    blinkt_white();     // Acende todos os LEDs a branco
+    
     // Inicializar ADC
     adc_oneshot_unit_init_cfg_t init_config = {
-        .unit_id = ADC_UNIT_1
-    };
+        .unit_id = ADC_UNIT_1};
     adc_oneshot_new_unit(&init_config, &adc1_handle);
 
     adc_oneshot_chan_cfg_t config = {
         .bitwidth = ADC_BITWIDTH_DEFAULT,
-        .atten = ADC_ATTEN_DB_12
-    };
+        .atten = ADC_ATTEN_DB_12};
 
     adc_oneshot_config_channel(adc1_handle, S1_CHANNEL, &config);
     adc_oneshot_config_channel(adc1_handle, S2_CHANNEL, &config);
@@ -43,7 +47,7 @@ void app_main(void)
     printf("Move o Dragster lentamente sobre a linha e o fundo...\n");
 
     uint32_t inicio = xTaskGetTickCount();
-    const int DURACAO_CALIB_MS = 10000;   // 3 segundos
+    const int DURACAO_CALIB_MS = 10000; // 3 segundos
 
     // -----------------------
     // CICLO DE CALIBRAÇÃO
@@ -55,17 +59,25 @@ void app_main(void)
         adc_oneshot_read(adc1_handle, S3_CHANNEL, &s3_raw);
         adc_oneshot_read(adc1_handle, S4_CHANNEL, &s4_raw);
 
-        if(s1_raw < min_s1) min_s1 = s1_raw;
-        if(s1_raw > max_s1) max_s1 = s1_raw;
+        if (s1_raw < min_s1)
+            min_s1 = s1_raw;
+        if (s1_raw > max_s1)
+            max_s1 = s1_raw;
 
-        if(s2_raw < min_s2) min_s2 = s2_raw;
-        if(s2_raw > max_s2) max_s2 = s2_raw;
+        if (s2_raw < min_s2)
+            min_s2 = s2_raw;
+        if (s2_raw > max_s2)
+            max_s2 = s2_raw;
 
-        if(s3_raw < min_s3) min_s3 = s3_raw;
-        if(s3_raw > max_s3) max_s3 = s3_raw;
+        if (s3_raw < min_s3)
+            min_s3 = s3_raw;
+        if (s3_raw > max_s3)
+            max_s3 = s3_raw;
 
-        if(s4_raw < min_s4) min_s4 = s4_raw;
-        if(s4_raw > max_s4) max_s4 = s4_raw;
+        if (s4_raw < min_s4)
+            min_s4 = s4_raw;
+        if (s4_raw > max_s4)
+            max_s4 = s4_raw;
 
         printf("S1 raw=%4d min=%4d max=%4d | S2 raw=%4d min=%4d max=%4d\n",
                s1_raw, min_s1, max_s1, s2_raw, min_s2, max_s2);
@@ -88,5 +100,6 @@ void app_main(void)
     printf("Calibração concluída! Reinicia para correr o programa.\n");
 
     // Impede que continue (opcional)
-    while(1) vTaskDelay(pdMS_TO_TICKS(1000));
+    while (1)
+        vTaskDelay(pdMS_TO_TICKS(1000));
 }

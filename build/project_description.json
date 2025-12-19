@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "CalibrateDragster",
-    "project_version":    "1",
+    "project_version":    "5054397-dirty",
     "project_path":       "/home/grinder/Documents/GitHub/CalibrateDragster",
     "idf_path":           "/home/grinder/esp/v5.5.1/esp-idf",
     "build_dir":          "/home/grinder/Documents/GitHub/CalibrateDragster/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/grinder/esp/v5.5.1/esp-idf/components/bootloader/Kconfig.projbuild;/home/grinder/esp/v5.5.1/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/grinder/esp/v5.5.1/esp-idf/components/esp_rom/Kconfig.projbuild;/home/grinder/esp/v5.5.1/esp-idf/components/esptool_py/Kconfig.projbuild;/home/grinder/esp/v5.5.1/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "xtensa" ],
-    "build_components" : [ "app_update", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/grinder/esp/v5.5.1/esp-idf/components/app_update", "/home/grinder/esp/v5.5.1/esp-idf/components/bootloader", "/home/grinder/esp/v5.5.1/esp-idf/components/bootloader_support", "/home/grinder/esp/v5.5.1/esp-idf/components/cxx", "/home/grinder/esp/v5.5.1/esp-idf/components/driver", "/home/grinder/esp/v5.5.1/esp-idf/components/efuse", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_adc", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_app_format", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_common", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_hw_support", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_mm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_partition", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_pm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_rom", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_security", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_system", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_timer", "/home/grinder/esp/v5.5.1/esp-idf/components/esptool_py", "/home/grinder/esp/v5.5.1/esp-idf/components/freertos", "/home/grinder/esp/v5.5.1/esp-idf/components/hal", "/home/grinder/esp/v5.5.1/esp-idf/components/heap", "/home/grinder/esp/v5.5.1/esp-idf/components/log", "/home/grinder/Documents/GitHub/CalibrateDragster/main", "/home/grinder/esp/v5.5.1/esp-idf/components/mbedtls", "/home/grinder/esp/v5.5.1/esp-idf/components/newlib", "/home/grinder/esp/v5.5.1/esp-idf/components/partition_table", "/home/grinder/esp/v5.5.1/esp-idf/components/pthread", "/home/grinder/esp/v5.5.1/esp-idf/components/sdmmc", "/home/grinder/esp/v5.5.1/esp-idf/components/soc", "/home/grinder/esp/v5.5.1/esp-idf/components/spi_flash", "/home/grinder/esp/v5.5.1/esp-idf/components/xtensa", "" ],
+    "build_components" : [ "app_update", "blinkt", "bootloader", "bootloader_support", "cxx", "driver", "efuse", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_common", "esp_driver_ana_cmpr", "esp_driver_bitscrambler", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_twai", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_hw_support", "esp_mm", "esp_partition", "esp_pm", "esp_ringbuf", "esp_rom", "esp_security", "esp_system", "esp_timer", "esptool_py", "freertos", "hal", "heap", "log", "main", "mbedtls", "newlib", "partition_table", "pthread", "sdmmc", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/grinder/esp/v5.5.1/esp-idf/components/app_update", "/home/grinder/Documents/GitHub/CalibrateDragster/components/blinkt", "/home/grinder/esp/v5.5.1/esp-idf/components/bootloader", "/home/grinder/esp/v5.5.1/esp-idf/components/bootloader_support", "/home/grinder/esp/v5.5.1/esp-idf/components/cxx", "/home/grinder/esp/v5.5.1/esp-idf/components/driver", "/home/grinder/esp/v5.5.1/esp-idf/components/efuse", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_adc", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_app_format", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_bootloader_format", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_common", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_ana_cmpr", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_bitscrambler", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_dac", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_gpio", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_gptimer", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_i2c", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_i2s", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_ledc", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_mcpwm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_parlio", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_pcnt", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_rmt", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdio", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdmmc", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_sdspi", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_spi", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_tsens", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_twai", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_uart", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_driver_usb_serial_jtag", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_hw_support", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_mm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_partition", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_pm", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_ringbuf", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_rom", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_security", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_system", "/home/grinder/esp/v5.5.1/esp-idf/components/esp_timer", "/home/grinder/esp/v5.5.1/esp-idf/components/esptool_py", "/home/grinder/esp/v5.5.1/esp-idf/components/freertos", "/home/grinder/esp/v5.5.1/esp-idf/components/hal", "/home/grinder/esp/v5.5.1/esp-idf/components/heap", "/home/grinder/esp/v5.5.1/esp-idf/components/log", "/home/grinder/Documents/GitHub/CalibrateDragster/main", "/home/grinder/esp/v5.5.1/esp-idf/components/mbedtls", "/home/grinder/esp/v5.5.1/esp-idf/components/newlib", "/home/grinder/esp/v5.5.1/esp-idf/components/partition_table", "/home/grinder/esp/v5.5.1/esp-idf/components/pthread", "/home/grinder/esp/v5.5.1/esp-idf/components/sdmmc", "/home/grinder/esp/v5.5.1/esp-idf/components/soc", "/home/grinder/esp/v5.5.1/esp-idf/components/spi_flash", "/home/grinder/esp/v5.5.1/esp-idf/components/xtensa", "" ],
     "build_component_info" : {
         "app_update": {
             "alias": "idf::app_update",
@@ -41,6 +41,21 @@
             "managed_priv_reqs": [],
             "file": "/home/grinder/Documents/GitHub/CalibrateDragster/build/esp-idf/app_update/libapp_update.a",
             "sources": [ "/home/grinder/esp/v5.5.1/esp-idf/components/app_update/esp_ota_ops.c", "/home/grinder/esp/v5.5.1/esp-idf/components/app_update/esp_ota_app_desc.c" ],
+            "include_dirs": [ "include" ]
+        },
+        "blinkt": {
+            "alias": "idf::blinkt",
+            "target": "___idf_blinkt",
+            "prefix": "idf",
+            "dir": "/home/grinder/Documents/GitHub/CalibrateDragster/components/blinkt",
+            "type": "LIBRARY",
+            "lib": "__idf_blinkt",
+            "reqs": [],
+            "priv_reqs": [ "driver", "freertos" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/grinder/Documents/GitHub/CalibrateDragster/build/esp-idf/blinkt/libblinkt.a",
+            "sources": [ "/home/grinder/Documents/GitHub/CalibrateDragster/components/blinkt/blinkt.c" ],
             "include_dirs": [ "include" ]
         },
         "bootloader": {
@@ -711,12 +726,12 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_adc", "driver" ],
+            "priv_reqs": [ "blinkt", "esp_adc", "driver", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/grinder/Documents/GitHub/CalibrateDragster/build/esp-idf/main/libmain.a",
             "sources": [ "/home/grinder/Documents/GitHub/CalibrateDragster/main/CalibrateDragster.c" ],
-            "include_dirs": []
+            "include_dirs": [ "." ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2143,10 +2158,22 @@
             "dir": "/home/grinder/Documents/GitHub/CalibrateDragster/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [ "spi_flash", "esp_adc", "driver" ],
+            "priv_reqs": [ "blinkt", "esp_adc", "driver", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "." ]
+        },
+        "blinkt": {
+            "alias": "idf::blinkt",
+            "target": "___idf_blinkt",
+            "prefix": "idf",
+            "dir": "/home/grinder/Documents/GitHub/CalibrateDragster/components/blinkt",
+            "lib": "__idf_blinkt",
+            "reqs": [],
+            "priv_reqs": [ "driver", "freertos" ],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": "",
