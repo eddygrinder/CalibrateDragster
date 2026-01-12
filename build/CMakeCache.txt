@@ -434,7 +434,7 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=2
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -605,7 +605,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.52.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/grinder/.espressif/python_env/idf5.5_py3.13_env/bin/python][found components: Interpreter ][v3.13.7()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/grinder/.espressif/python_env/idf5.5_py3.13_env/bin/python][found components: Interpreter ][v3.13.11()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -618,7 +618,7 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/home/grinder/.espressif/python_env/idf5.5_py3.13_env/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;7;32;64;;;abi3;/usr/lib/python3.13;/home/grinder/.espressif/python_env/idf5.5_py3.13_env/lib/python3.13;/home/grinder/.espressif/python_env/idf5.5_py3.13_env/lib/python3.13/site-packages;/home/grinder/.espressif/python_env/idf5.5_py3.13_env/lib/python3.13/site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;11;32;64;;;abi3;/usr/lib/python3.13;/home/grinder/.espressif/python_env/idf5.5_py3.13_env/lib/python3.13;/home/grinder/.espressif/python_env/idf5.5_py3.13_env/lib/python3.13/site-packages;/home/grinder/.espressif/python_env/idf5.5_py3.13_env/lib/python3.13/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=7c9a847d9227f7b70eacb62afb1539c9
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=

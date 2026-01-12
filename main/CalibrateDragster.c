@@ -10,10 +10,10 @@
 adc_oneshot_unit_handle_t adc1_handle;
 
 // Canal ADC dos sensores
-#define S1_CHANNEL ADC_CHANNEL_6
-#define S2_CHANNEL ADC_CHANNEL_7
-#define S3_CHANNEL ADC_CHANNEL_3
-#define S4_CHANNEL ADC_CHANNEL_5
+#define S1_CHANNEL ADC_CHANNEL_6 //Amarelo, S1 - GPIO34 -> Esquerda
+#define S2_CHANNEL ADC_CHANNEL_7 //Castanho, S2 - GPIO35
+#define S3_CHANNEL ADC_CHANNEL_3 //Cinzento, S3 - GPIO39
+#define S4_CHANNEL ADC_CHANNEL_5 //Castanho, S4 - GPIO33 -> Direita
 
 void app_main(void)
 {
